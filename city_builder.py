@@ -17,7 +17,7 @@ class CityBuilder(tk.Tk):
         self.title("Procedural Fantasy City Builder")
         self.geometry("800x600")
 
-        self.canvas = tk.Canvas(self, width=600, height=600)
+        self.canvas = tk.Canvas(self, width=600, height=650)
         self.canvas.pack(side=tk.LEFT, padx=20, pady=20)
 
         self.control_panel = tk.Frame(self)
@@ -67,7 +67,8 @@ class CityBuilder(tk.Tk):
 
     def update_city_size(self, value):
         self.generate_city()
-
+#////////////////////////////
 if __name__ == "__main__":
     app = CityBuilder()
+
     app.mainloop()
